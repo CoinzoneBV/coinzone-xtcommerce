@@ -1,0 +1,16 @@
+<table class="paymentblock" width="100%" border="0" cellspacing="0" cellpadding="6">
+  <tr>
+		  	{if $payment_hidden == true}
+		  		{form type=hidden name=selected_payment value=$payment_code}
+		  	{else}			
+			  	{if $payment_code==$payment_selected}
+			  	<td class="header" width="10">{form type=radio name=selected_payment value=$payment_code checked=true}</td>
+			  	{else}
+			  	<td class="header" width="10">{form type=radio name=selected_payment value=$payment_code}</td>
+			  	{/if}
+			{/if}  
+    <td class="main">{img img=bitcoin.jpg type=p plg=xt_coinzone class=productImageBorder alt=$payment_name}</td>
+    <td class="header" align="right">{$payment_price.formated}</td>
+  </tr>  
+</table>
+<br />

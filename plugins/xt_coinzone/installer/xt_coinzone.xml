@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf8"?>
+<xtcommerceplugin>
+    <title>Coinzone</title>
+    <type>payment</type>
+    <version>1.0.0</version>
+    <code>xt_coinzone</code>
+    <url>http://www.coinzone.com.com</url>
+    <description>Pay with Bitcoin via Coinzone</description>
+    <icon>coinzone.png</icon>
+    <payment>
+        <payment_code>xt_coinzone</payment_code>
+        <payment_dir>xt_coinzone</payment_dir>
+        <payment_icon></payment_icon>
+        <payment_tpl>coinzone.html</payment_tpl>
+        <de>
+            <title>Coinzone</title>
+            <description></description>
+        </de>
+        <en>
+            <title>Coinzone</title>
+            <description></description>
+        </en>
+    </payment>
+    <permission_check>
+        <resource>plugins/xt_coinzone/lib</resource>
+    </permission_check>
+    <db_install><![CDATA[
+
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 24, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 25, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 26, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 27, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 28, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 29, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 30, '', 0, 10000.00, 0, 1);");
+$db->Execute("INSERT INTO ".TABLE_PAYMENT_COST." (`payment_id`, `payment_geo_zone`, `payment_country_code`, `payment_type_value_from`, `payment_type_value_to`, `payment_price`,`payment_allowed`) VALUES(".$payment_id.", 31, '', 0, 10000.00, 0, 1);");
+
+]]></db_install>
+    <configuration_payment>
+        <config>
+            <key>CLIENT_CODE</key>
+            <type>textfield</type>
+            <sort_order>4</sort_order>
+            <de>
+                <title>CLIENT-CODE</title>
+            </de>
+            <en>
+                <title>CLIENT CODE</title>
+            </en>
+        </config>
+        <config>
+            <key>API_KEY</key>
+            <type>textfield</type>
+            <sort_order>3</sort_order>
+            <de>
+                <title>API-SCHLÜSSEL</title>
+            </de>
+            <en>
+                <title>API-KEY</title>
+            </en>
+        </config>
+        <config>
+            <key>ORDER_STATUS_NEW</key>
+            <type>dropdown</type>
+            <url>status:order_status</url>
+            <sort_order>2</sort_order>
+            <de>
+                <title>Bestellstatus - Neu</title>
+            </de>
+            <en>
+                <title>Order Status - New</title>
+            </en>
+        </config>
+        <config>
+            <key>ORDER_STATUS_SUCCESS</key>
+            <type>dropdown</type>
+            <url>status:order_status</url>
+            <sort_order>1</sort_order>
+            <de>
+                <title>Bestellstatus - Erfolg</title>
+            </de>
+            <en>
+                <title>Order Status - Success</title>
+            </en>
+        </config>
+    </configuration_payment>
+</xtcommerceplugin> 
