@@ -6,7 +6,7 @@
 
 #  System Requirements
 
-  * [merchant.coinzone.com](https://merchant.coinzone.com/signup?source=prestashop) account
+  * [merchant.coinzone.com](https://merchant.coinzone.com/signup?source=xtcommerce) account
   * [xt:commerce](http://www.xt-commerce.co.uk/)
   * PHP 5+
   * Curl PHP Extension
@@ -14,7 +14,7 @@
 
 #  Configuration
 
-The current version of the prestashop plugin is version 1.0. It is available either by cloning this repository.
+The current version of the xt:commerce plugin is version 1.0. It is available either by cloning this repository.
 
 1. Upload files to your xt:commerce installation.
 
@@ -27,7 +27,7 @@ The current version of the prestashop plugin is version 1.0. It is available eit
 4. Go to your xt:commerce administration. Configuration -&gt; Method of Payment -&gt;
 "Coinzone " -&gt; check checkbox -&gt; click [Enable Selection]
 
-5. Don't have a Coinzone account? [Sign up for free](https://merchant.coinzone.com/signup?source=prestashop)
+5. Don't have a Coinzone account? [Sign up for free](https://merchant.coinzone.com/signup?source=xtcommerce)
 
 6. Fill in your Client Code and API Key. They can be found on the API tab of the Settings page in the [Coinzone Control Panel](https://merchant.coinzone.com/settings#apiTab).
 
