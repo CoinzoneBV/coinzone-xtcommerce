@@ -22,10 +22,10 @@ The current version of the prestashop plugin is version 1.0. It is available eit
 "Coinzone " click [Run]
 
 3. Go to your xt:commerce administration. Plugins -&gt; Plugins Installed -&gt;
-"Coinzone " check checkbox -&gt; click [Enable Selection]
+"Coinzone " -&gt; check checkbox -&gt; click [Enable Selection]
 
 4. Go to your xt:commerce administration. Configuration -&gt; Method of Payment -&gt;
-"Coinzone " check checkbox -&gt; click [Enable Selection]
+"Coinzone " -&gt; check checkbox -&gt; click [Enable Selection]
 
 5. Don't have a Coinzone account? [Sign up for free](https://merchant.coinzone.com/signup?source=prestashop)
 
