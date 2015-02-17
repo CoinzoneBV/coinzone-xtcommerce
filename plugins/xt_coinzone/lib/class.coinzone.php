@@ -6,7 +6,7 @@ class Coinzone {
 	/**
 	 * Coinzone API URL
 	 */
-	const API_URL = 'https://api.coinzone.web/v2/';
+	const API_URL = 'https://api.coinzone.com/v2/';
 
 	/**
 	 * @var string
