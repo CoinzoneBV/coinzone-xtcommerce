@@ -2,7 +2,7 @@
 <xtcommerceplugin>
     <title>Coinzone</title>
     <type>payment</type>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <code>xt_coinzone</code>
     <url>http://www.coinzone.com.com</url>
     <description>Pay with Bitcoin via Coinzone</description>

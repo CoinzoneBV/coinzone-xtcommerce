@@ -5,7 +5,7 @@ include_once( "plugins/xt_coinzone/lib/class.coinzone.php" );
 
 class xt_coinzone {
 
-	var $version = '1.0';
+	var $version = '1.1.0';
 	var $data = array();
 	var $external = true;
 	var $apiKey;
@@ -60,7 +60,8 @@ class xt_coinzone {
 			'merchantReference' => $order->oID,
 			'email'             => $order->order_customer['customers_email_address'],
 			'redirectUrl'       => html_entity_decode($xtLink->_link( array( 'page' => 'checkout', 'paction' => 'payment_process' ) )),
-			'notificationUrl'   => html_entity_decode($xtLink->_link( array( 'page' => 'callback', 'paction' => 'xt_coinzone' ) ))
+			'notificationUrl'   => html_entity_decode($xtLink->_link( array( 'page' => 'callback', 'paction' => 'xt_coinzone' ) )),
+            'userAgent'         => 'xt:Commerce ' . _SYSTEM_VERSION . ' - Plugin Version ' . $this->version
 		);
 
 		$coinzone = new Coinzone( $this->getApiKey(), $this->getClientCode() );
