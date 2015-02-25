@@ -14,7 +14,7 @@
 
 #  Configuration
 
-The current version of the xt:commerce plugin is version 1.0. It is available either by cloning this repository.
+The current version of the xt:commerce plugin is version 1.1.0. It is available either by cloning this repository.
 
 1. Upload files to your xt:commerce installation.
 
